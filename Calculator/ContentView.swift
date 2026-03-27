@@ -96,6 +96,54 @@ struct ContentView: View {
                 }.padding(20)
                 
   
+                HStack {
+                    
+                    Button(action: {
+                        
+                    }) {
+                        Image("HistoryIcon")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.gray)
+                            .frame(width: 18, height: 18)
+                    }
+                    
+                    Button(action: {
+                        
+                    }) {
+                        Image("RulerIcon")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 24, height: 24)
+                    }.padding(.horizontal, 10)
+                    
+                    Button(action: {
+                        
+                    }) {
+                        Image("FxIcon")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                    }
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        
+                    }) {
+                        Image("ClearIcon")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(Color("EqualButtonColor"))
+                            .frame(width: 36, height: 36)
+                    }
+                    
+                    
+                    
+                }.padding(.trailing, 15).padding(.leading, 20)
+                
                 Divider().padding(20)
                 
                 // Buttons
